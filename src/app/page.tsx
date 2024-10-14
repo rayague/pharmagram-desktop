@@ -32,7 +32,7 @@ import {
 
 export default function Home() {
   return (
-    <div className=" font-sans min-h-screen w-full items-center  justify-center justify-items-center bg-gradient-to-br from-green-400 to-blue-700 p-8">
+    <div className="font-sans flex min-h-screen w-full flex-col items-center  justify-center justify-items-center bg-gradient-to-br from-green-400 to-blue-700 p-8">
       <main className=" flex w-full flex-col items-center">
         <div className="flex flex-row items-center justify-center text-center  ">
           <FontAwesomeIcon
