@@ -32,18 +32,18 @@ import {
 
 export default function Home() {
   return (
-    <div className="grid-rows font-sans grid h-screen min-h-screen items-center justify-items-center bg-gradient-to-br from-green-400 to-blue-700 p-8">
-      <main className="row-start-2 flex flex-col items-center gap-8">
+    <div className=" font-sans min-h-screen w-full items-center  justify-center justify-items-center bg-gradient-to-br from-green-400 to-blue-700 p-8">
+      <main className=" flex w-full flex-col items-center">
         <div className="flex flex-row items-center justify-center text-center  ">
           <FontAwesomeIcon
             icon={faMedkit} // Trousse de premiers secours
-            className="mx-2 size-16 text-white"
+            className="mx-2 size-5 text-white sm:size-8 md:size-12 lg:size-16"
           />
-          <h1 className="mx-2 text-8xl font-black tracking-tighter text-green-500">
+          <h1 className="mx-2 text-3xl font-black tracking-tighter text-green-500 sm:text-3xl md:text-5xl lg:text-6xl">
             <span className="text-white">Pharma</span>gram
           </h1>
         </div>
-        <h3 className="mb-3 text-center text-2xl font-light tracking-tight text-white">
+        <h3 className="mb-3 text-center text-sm font-light tracking-tight text-white sm:text-sm md:text-xl">
           Bienvenue sur Pharmagram - Votre partenaire digital pour une gestion
           optimale des produits pharmaceutiques.
         </h3>
@@ -57,9 +57,9 @@ export default function Home() {
           </Link>
         </div>
       </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
+      <footer className="absolute bottom-2 mx-auto flex flex-wrap items-center justify-center justify-items-center gap-3">
         <Link
-          className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +68,7 @@ export default function Home() {
           Politique de confidentialité
         </Link>
         <Link
-          className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function Home() {
           Conditions
         </Link>
         <Link
-          className="flex items-center gap-2 text-white hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"
