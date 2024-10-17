@@ -68,10 +68,14 @@ const Header = (props: {
 
         <div className="hidden xl:block">
           <div>
-            <h1 className="mb-0.5 text-heading-5 font-bold text-dark dark:text-white">
-              Dashboard
+            <h1 className="mb-0.5 text-heading-5 font-bold text-green dark:text-white">
+              Tableau de bord - Pharmagram
             </h1>
-            <p className="font-medium">Next.js Admin Dashboard Solution</p>
+            <p className="font-medium">
+              {" "}
+              Suivi et gestion des pharmacies, des commandes et des stocks de
+              médicaments.
+            </p>
           </div>
         </div>
 

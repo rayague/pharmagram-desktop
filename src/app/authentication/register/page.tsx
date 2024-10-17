@@ -78,7 +78,7 @@ export default function Page() {
                     className="text-white"
                     htmlFor="preuve_de_certification"
                   >
-                    Preuve de certification
+                    Preuve d&apos;autorisation
                   </label>
                   <input
                     className="mb-3 w-full rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-950 placeholder:text-zinc-400 focus:outline-0"
