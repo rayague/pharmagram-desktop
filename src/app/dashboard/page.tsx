@@ -4,9 +4,9 @@ import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import React from "react";
 
 export const metadata: Metadata = {
-  title:
-    "Next.js E-commerce Dashboard Page | NextAdmin - Next.js Dashboard Kit",
-  description: "This is Next.js Home page for NextAdmin Dashboard Kit",
+  title: "Pharmagram | Dashboard de gestion de pharmacie",
+  description:
+    "Pharmagram - Tableau de bord intuitif pour la gestion de votre pharmacie, facilitant la gestion des stocks, des ventes et des commandes.",
 };
 
 export default function Home() {
