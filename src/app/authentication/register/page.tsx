@@ -128,7 +128,7 @@ export default function Page() {
             <p>
               <Link
                 href="/authentication/login"
-                className="text-sm font-medium text-white underline"
+                className="text-sm font-medium text-white underline underline-offset-2"
               >
                 J&apos;ai déjà un compte ? Me connecter
               </Link>

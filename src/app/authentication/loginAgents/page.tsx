@@ -62,31 +62,12 @@ export default function page() {
                 </div>
                 <Link
                   className="ring-offset-background focus-visible:ring-ring text-primary-foreground mt-4 w-full items-center justify-center whitespace-nowrap rounded-lg bg-green-600 px-4 py-3 text-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-                  // type=""
-                  // onClick={notify}
-                  href="/dashboard"
+                  href="/dashboardAgents"
                 >
                   Se connecter
                 </Link>
               </div>
             </form>
-            <p>
-              <Link
-                href=""
-                className="text-sm font-medium text-white underline underline-offset-4"
-                onClick={notify}
-              >
-                Mot de passe oublié?
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/authentication/register"
-                className="text-sm font-medium text-white underline underline-offset-4"
-              >
-                Pas de compte ? S&apos;inscrire
-              </Link>
-            </p>
           </div>
         </div>
       </div>

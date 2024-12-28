@@ -10,26 +10,26 @@ import {
 
 export default function page() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 font-sans bg-gradient-to-br from-green-400 to-blue-700 h-screen">
-      <main className="flex flex-col w-full items-center">
-        <div className="flex gap-2 items-center flex-col w-full sm:w-3/4 md:w-1/2">
+    <div className="font-sans flex h-screen min-h-screen flex-col items-center justify-center bg-gradient-to-br from-green-400 to-blue-700 p-8">
+      <main className="flex w-full flex-col items-center">
+        <div className="flex w-full flex-col items-center gap-2 sm:w-3/4 md:w-1/2">
           <Link
-            className="rounded-lg border border-solid border-green-600 text-white transition-colors flex items-center justify-center bg-green-500 text-sm py-3 px-8 w-full"
+            className="text-md flex w-full items-center justify-center rounded-lg border border-solid border-green-600 bg-green-500 px-8 py-3 font-bold text-white transition-colors"
             href="/authentication/register"
           >
-            S&apos;inscrire
+            S&apos;enrégistrer
           </Link>
           <Link
-            className="rounded-lg border border-solid border-green-600 text-white transition-colors flex items-center justify-center bg-green-500 text-sm py-3 px-5 w-full"
-            href="/authentication/login"
+            className="text-md flex w-full items-center justify-center rounded-lg border border-solid border-green-600 bg-green-500 px-5 py-3 font-bold text-white transition-colors"
+            href="/authentication/loginAgents"
           >
-            Se connecter
+            Connexion agent
           </Link>
         </div>
       </main>
-      <footer className="flex gap-3 absolute bottom-2 flex-wrap items-center justify-center">
+      <footer className="absolute bottom-2 flex flex-wrap items-center justify-center gap-3">
         <Link
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white text-sm"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function page() {
           Politique de confidentialité
         </Link>
         <Link
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white text-sm"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default function page() {
           Conditions
         </Link>
         <Link
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white text-sm"
+          className="flex items-center gap-2 text-sm text-white hover:underline hover:underline-offset-4"
           href="https://rayague.github.io/pharmagram/"
           target="_blank"
           rel="noopener noreferrer"

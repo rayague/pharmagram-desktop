@@ -33,7 +33,7 @@ const menuGroups = [
         icon: <FontAwesomeIcon icon={faWindowRestore} />,
         label: "Tableau de bord",
         route: "#",
-        children: [{ label: "Acceuil", route: "/dashboard" }],
+        children: [{ label: "Acceuil", route: "/dashboardAgents" }],
       },
       {
         icon: <FontAwesomeIcon icon={faMedkit} />,

@@ -1,4 +1,5 @@
-import Acceuil from "@/components/Dashboard/Acceuil";
+import ProduitsEdit from "@/components/Dashboard/ProductsEdit";
+
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import React from "react";
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <>
       <DefaultLayout>
-        <Acceuil />
+        <ProduitsEdit />
       </DefaultLayout>
     </>
   );
