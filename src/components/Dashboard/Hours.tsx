@@ -31,13 +31,13 @@ const Hours: React.FC = () => {
   return (
     <div className="mt-6 rounded-md bg-white p-4 shadow">
       <h1 className="mb-4 text-xl font-semibold">
-        Gérer les Heures d'Ouverture
+        Gérer les Heures d&apos;Ouverture
       </h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Heure d'ouverture */}
         <div>
           <label className="block text-sm font-medium text-gray-700">
-            Heure d'ouverture
+            Heure d&apos;ouverture
           </label>
           <div className="mt-1 flex items-center gap-2">
             <select

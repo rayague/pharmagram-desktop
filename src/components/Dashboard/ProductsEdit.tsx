@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ProductsEdit: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -93,12 +94,12 @@ const ProductsEdit: React.FC = () => {
                   {product.price} €
                 </td>
                 <td className="border border-stroke px-4 py-2">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     width={50}
                     height={50}
-                  />
+                  ></Image>
                 </td>
                 <td className="flex flex-row items-center justify-center border border-stroke px-4 py-2">
                   <button
@@ -175,7 +176,7 @@ const ProductsEdit: React.FC = () => {
                 {/* Date d'expiration */}
                 <div className="mb-4.5">
                   <label className="mb-3 block text-body-sm font-medium text-dark dark:text-white">
-                    Date d'expiration
+                    Date d&apos;expiration
                   </label>
                   <input
                     type="date"

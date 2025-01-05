@@ -43,7 +43,7 @@ const Profile = () => {
 
   return (
     <div className="p-6">
-      <h1 className="mb-4 text-2xl font-bold">Profil de l'utilisateur</h1>
+      <h1 className="mb-4 text-2xl font-bold">Profil de l&apos;utilisateur</h1>
 
       <div className="rounded-md bg-white p-4 shadow-md">
         <div className="mb-4">

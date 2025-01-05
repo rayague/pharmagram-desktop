@@ -43,7 +43,7 @@ const Acceuil: React.FC = () => {
               className="mr-3 h-8 w-8 text-green-600"
             />
             <h3 className="text-xl font-semibold text-green-800">
-              Heures d'ouverture
+              Heures d&apos;ouverture
             </h3>
           </div>
           <p className="text-lg text-green-800">{pharmacyData.openingHours}</p>
@@ -71,7 +71,7 @@ const Acceuil: React.FC = () => {
               className="mr-3 h-8 w-8 text-purple-600"
             />
             <h3 className="text-xl font-semibold text-purple-800">
-              Rôle de l'utilisateur
+              Rôle de l&apos;utilisateur
             </h3>
           </div>
           <p className="text-lg text-purple-800">{userData.role}</p>

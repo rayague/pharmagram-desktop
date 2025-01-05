@@ -55,7 +55,7 @@ const ProductsAdd: React.FC = () => {
               {/* Date d'expiration */}
               <div className="mb-4.5">
                 <label className="mb-3 block text-body-sm font-medium text-dark dark:text-white">
-                  Date d'expiration
+                  Date d&apos;expiration
                 </label>
                 <input
                   type="date"

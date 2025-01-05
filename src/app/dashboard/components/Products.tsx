@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -204,18 +205,20 @@ function Products() {
         >
           <div className="w-96 rounded-lg bg-white p-6 text-center">
             <h2 className="mb-4 text-xl font-bold">{selectedProduct.name}</h2>
-            <img
+
+            <Image
               src={selectedProduct.imageUrl}
               alt={selectedProduct.name}
               className="mb-4 h-auto w-full"
-            />
+            ></Image>
+
             <p className="mb-4">{selectedProduct.description}</p>
             <p className="mb-2">
               <strong>Classe pharmaceutique:</strong>{" "}
               {selectedProduct.pharmaceuticalClass}
             </p>
             <p className="mb-2">
-              <strong>Date d'expiration:</strong>{" "}
+              <strong>Date d&apos;expiration:</strong>{" "}
               {selectedProduct.expirationDate}
             </p>
             <p className="mb-2">
