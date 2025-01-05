@@ -18,6 +18,8 @@ import {
   faClipboardCheck,
   faFileInvoice,
   faChartBar,
+  faSignOutAlt, // Icône de déconnexion
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface SidebarProps {
@@ -77,14 +79,11 @@ const menuGroups = [
         route: "/support",
       },
       {
-        icon: <FontAwesomeIcon icon={faUserPlus} />,
-        label: "Gestion Utilisateurs",
-        route: "#",
-        children: [
-          { label: "Créer un Utilisateur", route: "/users/create" },
-          { label: "Gérer les Utilisateurs", route: "/users/manage" },
-        ],
+        icon: <FontAwesomeIcon icon={faClock} />,
+        label: "Heures d'ouverture",
+        route: "/hours",
       },
+
       {
         icon: <FontAwesomeIcon icon={faClipboardCheck} />,
         label: "Validation des Produits",
@@ -112,6 +111,13 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const pathname = usePathname();
   const [pageName, setPageName] = useLocalStorage("selectedMenu", "dashboard");
 
+  const handleLogout = () => {
+    // Code pour la déconnexion, rediriger ou supprimer les données de session
+    console.log("Déconnexion en cours...");
+    // Par exemple, vous pouvez rediriger vers la page de connexion :
+    // window.location.href = '/login';
+  };
+
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
@@ -124,24 +130,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         {/* SIDEBAR HEADER */}
         <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5 xl:py-10">
           <Link href="/dashboardAgents">
-            <Image
-              width={176}
-              height={32}
-              src={"/images/logo/logo-dark.svg"}
-              alt="Logo"
-              priority
-              className="dark:hidden"
-              style={{ width: "auto", height: "auto" }}
-            />
-            <Image
-              width={176}
-              height={32}
-              src={"/images/logo/logo.svg"}
-              alt="Logo"
-              priority
-              className="hidden dark:block"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <h3 className=" text-center text-3xl font-black text-green-500">
+              Pharmagram
+            </h3>
           </Link>
 
           <button
@@ -171,8 +162,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             {menuGroups.map((group, groupIndex) => (
               <div key={groupIndex}>
                 <h3 className="mb-5 text-sm font-medium text-green dark:text-dark-6">
-                  {" "}
-                  {/* Changez ici */}
                   {group.name}
                 </h3>
 
@@ -190,6 +179,17 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             ))}
           </nav>
           {/* Sidebar Menu */}
+
+          {/* Logout Button */}
+          <div className="mt-6 px-6">
+            <button
+              onClick={handleLogout}
+              className="mb-10 flex w-full items-center justify-start space-x-3 rounded-md bg-red-600 px-4 py-2 text-white hover:bg-red-700"
+            >
+              <FontAwesomeIcon icon={faSignOutAlt} />
+              <span className="text-lg font-medium">Déconnexion</span>
+            </button>
+          </div>
         </div>
       </aside>
     </ClickOutside>

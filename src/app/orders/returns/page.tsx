@@ -1,4 +1,4 @@
-import Acceuil from "@/components/Dashboard/Acceuil";
+import OrdersReturns from "@/components/Dashboard/OrdersReturns";
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import React from "react";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <DefaultLayout>
-        <Acceuil />
+        <OrdersReturns />
       </DefaultLayout>
     </>
   );

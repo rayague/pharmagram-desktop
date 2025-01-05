@@ -1,7 +1,7 @@
-import OrdersCurrent from "@/components/Dashboard/OrdersCurrent";
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import React from "react";
+import Hours from "@/components/Dashboard/Hours";
 
 export const metadata: Metadata = {
   title: "Pharmagram | Dashboard de gestion de pharmacie",
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <DefaultLayout>
-        <OrdersCurrent />
+        <Hours />
       </DefaultLayout>
     </>
   );
