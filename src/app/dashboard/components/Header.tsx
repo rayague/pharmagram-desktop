@@ -16,6 +16,8 @@ const Header: React.FC = () => {
           src="/images/header/profil.jpg"
           alt="Logo de la pharmacie"
           className="h-10 w-10 rounded-full"
+          width={500}
+          height={500}
         ></Image>
         <h1 className="text-xl font-bold">Nom de la Pharmacie</h1>
       </div>
